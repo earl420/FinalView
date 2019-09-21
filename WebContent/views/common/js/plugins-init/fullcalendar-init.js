@@ -26,17 +26,18 @@
             backdrop: "static"
         });
         var i = e("<form></form>");
-        i.append("<div class='row'></div>"), i.find(".row").append("<div class='col-md-6'><div class='form-group'><label class='control-label'>Event Name</label><input class='form-control' placeholder='Insert Event Name' type='text' name='title'/></div></div>").append("<div class='col-md-6'><div class='form-group'><label class='control-label'>Category</label><select class='form-control' name='category'></select></div></div>").find("select[name='category']").append("<option value='bg-danger'>Danger</option>").append("<option value='bg-success'>Success</option>").append("<option value='bg-dark'>Dark</option>").append("<option value='bg-primary'>Primary</option>").append("<option value='bg-pink'>Pink</option>").append("<option value='bg-info'>Info</option>").append("<option value='bg-warning'>Warning</option></div></div>"), o.$modal.find(".delete-event").hide().end().find(".save-event").show().end().find(".modal-body").empty().prepend(i).end().find(".save-event").unbind("click").on("click", function() {
+        i.append("<div class='row'></div>"), i.find(".row").append("<div class='col-md-6'><div class='form-group'><label class='control-label'>일정명</label><input class='form-control' placeholder='Insert Event Name' type='text' name='title'/></div></div>").append("<div class='col-md-6'><div class='form-group'><label class='control-label'>일정명</label><select class='form-control' name='color'></select></div></div>").find("select[name='color']").append("<option value='red' style='color:red;'>공지사항</option>").append("<option value='blue' style='color:blue;'>부서일정</option>").append("<option value='green' style='color:green;'>개인일정</option>").append("<option value='pink' style='color:pink;'>보고서제출</option>").append("<option value='violet' style='color:violet;'>근태</option>").append("</div></div>"), o.$modal.find(".delete-event").hide().end().find(".save-event").show().end().find(".modal-body").empty().prepend(i).end().find(".save-event").unbind("click").on("click", function() {
             i.submit()
         }), o.$modal.find("form").on("submit", function() {
             var e = i.find("input[name='title']").val(),
-                a = (i.find("input[name='beginning']").val(), i.find("input[name='ending']").val(), i.find("select[name='category'] option:checked").val());
+                a = (i.find("input[name='beginning']").val(), i.find("input[name='ending']").val(), i.find("select[name='color'] option:checked").val());
             return null !== e && 0 != e.length ? (o.$calendarObj.fullCalendar("renderEvent", {
                 title: e,
                 start: t,
                 end: n,
                 allDay: !1,
-                className: a
+                color: a,
+                textColor:"#ffffff"
             }, !0), o.$modal.modal("hide")) : alert("You have to give a title to your event"), !1
         }), o.$calendarObj.fullCalendar("unselect")
     }, t.prototype.enableDrag = function() {
@@ -57,16 +58,19 @@
             a = [{
                 title: "Hey!",
                 start: new Date(e.now() + 158e6),
-                className: "bg-dark"
+                color: "pink",
+                textColor:"#ffffff"
             }, {
                 title: "See John Deo",
                 start: n,
                 end: n,
-                className: "bg-danger"
+                className: "bg-danger",
+                textColor:"#ffffff"
             }, {
                 title: "Buy a Theme",
                 start: new Date(e.now() + 338e6),
-                className: "bg-primary"
+                className: "bg-primary",
+                textColor:"#ffffff"
             }],
             o = this;
         o.$calendarObj = o.$calendar.fullCalendar({
