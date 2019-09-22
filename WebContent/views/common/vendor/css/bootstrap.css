@@ -45,6 +45,14 @@ template {
 a {
   background-color: transparent;
 }
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100%;
+  backface-visibility: hidden;
+  perspective: 1000px; }
+
 a:active,
 a:hover {
   outline: 0;

@@ -141,7 +141,7 @@
 
 				
 				<div class="col-lg-6">
-					<label for="calendar_view">등록자별</label>
+					<label for="calendar_view">카테고리별</label>
 					<div class="input-group">
 						<label class="checkbox-inline"><input class='filter'
 							type="checkbox" value="카테고리1" checked>전체일정</label> <label
@@ -170,7 +170,7 @@
 	<script src="views/common/vendor/js/select2.min.js"></script>
 	<script src="views/common/vendor/js/bootstrap-datetimepicker.min.js"></script>
 	<script src="views/common/js/main.js"></script>
-	<script src="views/common/js/addEvent.js"></script>
+	<!-- <script src="views/common/js/addEvent.js"></script> -->
 	<!-- <script src="views/common/js/editEvent.js"></script> -->
 	<script src="views/common/js/etcSetting.js"></script>
 </body>

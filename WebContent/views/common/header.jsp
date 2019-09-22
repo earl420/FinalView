@@ -18,8 +18,8 @@
   <!--**********************************
             Nav header start
         ***********************************-->
-        <div class="nav-header">
-            <div class="brand-logo" style="background:white;">
+        <div class="nav-header" style="background:white;">
+            <div class="brand-logo" >
                 <a href="index.html">
                     <b class="logo-abbr"><img src="resources/logo1.png" alt=""> </b>
                     <span class="logo-compact"><img src="resources/logo1.png" alt=""></span>
