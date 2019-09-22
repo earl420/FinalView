@@ -16,7 +16,6 @@
 <link href="views/common/css/style.css" rel="stylesheet">
 
 
-
 </head>
 
 <body>
@@ -44,17 +43,21 @@
             Content body start
         ***********************************-->
 	<div class="content-body" style="background: white;">
-		<div class="content-fluid" style="height: 100px;" align="center">
-			<div class="col-sm-6">
-				<p style="font-size: 1.5em;">출/퇴근</p>
-				<button class="col-sm-5 btn btn-outline-success" style="height:50px;">출근</button> &nbsp;&nbsp;&nbsp;
-				<button class="col-sm-5 btn btn-outline-danger" style="height:50px;">퇴근</button>
+		<div class="content-fluid" style="height: 100px;padding-left: 25%;" align="center">
+			<div class="col-sm-6" >
+			<p style="font-size: 1.5em; padding-right: 20px;">출/퇴근</p>
+				<button class="col-sm-5 btn btn-success" style="height:50px;">출근</button>
+				<div class="col-sm-2"></div>
+				<button class="col-sm-5 btn btn-danger" style="height:50px;">퇴근</button>
 			</div>
+				
+			
 			
 		</div>
 			<!-- row -->
 			<div class="content-fluid">
-				<%@ include file="views/common/calendar.jsp" %>
+				<%-- <%@ include file="views/common/calendar.jsp" %> --%> 
+				<%@ include file="views/common/calendar2.jsp" %>
 			</div>
 			<!-- /.container -->
 		
