@@ -20,22 +20,16 @@ function filtering(event) {
   var show_username = true;
   var show_type = true;
 
-  var username = $('input:checkbox.filter:checked').map(function () {
+  var type = $('input:checkbox.filter:checked').map(function () {
     return $(this).val();
   }).get();
-  var types = $('#type_filter').val();
 
-  show_username = username.indexOf(event.username) >= 0;
 
-  if (types && types.length > 0) {
-    if (types[0] == "all") {
-      show_type = true;
-    } else {
-      show_type = types.indexOf(event.type) >= 0;
-    }
-  }
+  show_type = type.indexOf(event.type) >= 0;
 
-  return show_username && show_type;
+
+
+  return show_type;
 }
 
 function calDateWhenResize(event) {
@@ -100,7 +94,7 @@ var calendar = $('#calendar').fullCalendar({
       }),
       content: $('<div />', {
           class: 'popoverInfoCalendar'
-        }).append('<p><strong>등록자:</strong> ' + event.username + '</p>')
+        })/*.append('<p><strong>등록자:</strong> ' + event.username + '</p>')*/
         .append('<p><strong>구분:</strong> ' + event.type + '</p>')
         .append('<p><strong>시간:</strong> ' + getDisplayEventDate(event) + '</p>')
         .append('<div class="popoverDescCalendar"><strong>설명:</strong> ' + event.description + '</div>'),
@@ -252,7 +246,7 @@ var calendar = $('#calendar').fullCalendar({
       });
       startDate = moment(startDate).format('YYYY-MM-DD HH:mm');
       endDate = moment(endDate).subtract(1, 'days');
-
+      
       endDate.set({
         hours: today.hours() + 1,
         minute: today.minutes()
@@ -319,5 +313,6 @@ var calendar = $('#calendar').fullCalendar({
   dayPopoverFormat: 'MM/DD dddd',
   longPressDelay: 0,
   eventLongPressDelay: 0,
-  selectLongPressDelay: 0
+  selectLongPressDelay: 0,
+  contentHeight: 600
 });

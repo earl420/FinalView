@@ -42,10 +42,10 @@
 		<!--**********************************
             Content body start
         ***********************************-->
-	<div class="content-body" style="background: white;">
-		<div class="content-fluid" style="height: 100px;padding-left: 25%;" align="center">
-			<div class="col-sm-6" >
-			<p style="font-size: 1.5em; padding-right: 20px;">출/퇴근</p>
+	<div class="content-body" >
+		<div class="content-fluid" style="height: 100px;padding-left: 30%;" align="center">
+			<div class="col-sm-6" style="padding-bottom:5px; background: white; border: 1px solid lightgray;">
+			<p style="font-size: 1.5em; padding-right: 20px;">&nbsp;출/퇴근</p>
 				<button class="col-sm-5 btn btn-success" style="height:50px;">출근</button>
 				<div class="col-sm-2"></div>
 				<button class="col-sm-5 btn btn-danger" style="height:50px;">퇴근</button>

@@ -139,31 +139,20 @@
 
 			<div class="panel-body">
 
-				<div class="col-lg-6">
-					<label for="calendar_view">구분별</label>
-					<div class="input-group">
-						<select class="filter" id="type_filter" multiple="multiple">
-							<option value="카테고리1">카테고리1</option>
-							<option value="카테고리2">카테고리2</option>
-							<option value="카테고리3">카테고리3</option>
-							<option value="카테고리4">카테고리4</option>
-						</select>
-					</div>
-				</div>
-
+				
 				<div class="col-lg-6">
 					<label for="calendar_view">등록자별</label>
 					<div class="input-group">
 						<label class="checkbox-inline"><input class='filter'
-							type="checkbox" value="정연" checked>정연</label> <label
+							type="checkbox" value="카테고리1" checked>전체일정</label> <label
 							class="checkbox-inline"><input class='filter'
-							type="checkbox" value="다현" checked>다현</label> <label
+							type="checkbox" value="카테고리2" checked>부서일정</label> <label
 							class="checkbox-inline"><input class='filter'
-							type="checkbox" value="사나" checked>사나</label> <label
+							type="checkbox" value="카테고리3" checked>개인일정</label> <label
 							class="checkbox-inline"><input class='filter'
-							type="checkbox" value="나연" checked>나연</label> <label
+							type="checkbox" value="카테고리4" checked>보고서</label> <label
 							class="checkbox-inline"><input class='filter'
-							type="checkbox" value="지효" checked>지효</label>
+							type="checkbox" value="카테고리5" checked>근태</label>
 					</div>
 				</div>
 
@@ -182,7 +171,7 @@
 	<script src="views/common/vendor/js/bootstrap-datetimepicker.min.js"></script>
 	<script src="views/common/js/main.js"></script>
 	<script src="views/common/js/addEvent.js"></script>
-	<script src="views/common/js/editEvent.js"></script>
+	<!-- <script src="views/common/js/editEvent.js"></script> -->
 	<script src="views/common/js/etcSetting.js"></script>
 </body>
 </html>

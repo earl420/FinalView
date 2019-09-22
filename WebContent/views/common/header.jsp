@@ -7,7 +7,7 @@
     
     <script src="https://kit.fontawesome.com/ee2dc8e60a.js" crossorigin="anonymous"></script>
 
-    <!-- Custom Stylesheet -->
+    <!--&nbsp;Custom Stylesheet -->
     <link href="views/common/css/style.css" rel="stylesheet">
 
 </head>
@@ -205,7 +205,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="nk-sidebar">           
+        <div class="nk-sidebar" style="padding-top: 10px;">           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
                     
@@ -221,9 +221,9 @@
                         </a>
                         <ul aria-expanded="false">
 
-                            <li><a href="./layout-blank.html">-전체 목록</a></li>
-                            <li><a href="./layout-one-column.html">-결재요청문서</a></li>
-                            <li><a href="./layout-two-column.html">-결재문서 등록</a></li>
+                            <li><a href="./layout-blank.html">-&nbsp;전체 목록</a></li>
+                            <li><a href="./layout-one-column.html">-&nbsp;결재요청문서</a></li>
+                            <li><a href="./layout-two-column.html">-&nbsp;결재문서 등록</a></li>
                         </ul>
                     </li>   
                     <li>
@@ -231,11 +231,11 @@
                             <i class="fas fa-calculator"></i><span class="nav-text">총무/회계</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./app-profile.html">-공지사항</a></li>
-                            <li><a href="./app-profile.html">-매출관리</a></li>
-                            <li><a href="./app-calender.html">-O/S관리</a></li>
-                            <li><a href="./app-calender.html">-사내물품 관리</a></li>
-                            <li><a href="./app-calender.html">-월급 관리</a></li>
+                            <li><a href="./app-profile.html">-&nbsp;공지사항</a></li>
+                            <li><a href="./app-profile.html">-&nbsp;매출관리</a></li>
+                            <li><a href="./app-calender.html">-&nbsp;O/S관리</a></li>
+                            <li><a href="./app-calender.html">-&nbsp;사내물품 관리</a></li>
+                            <li><a href="./app-calender.html">-&nbsp;월급 관리</a></li>
                         </ul>
                     </li>
                     <li>
@@ -243,12 +243,12 @@
                             <i class="fas fa-users"></i><span class="nav-text">인사</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./chart-flot.html">-공지사항</a></li>
-                            <li><a href="./chart-morris.html">-사원 등록 및 삭제</a></li>
-                            <li><a href="./chart-chartjs.html">-직급 관리</a></li>
-                            <li><a href="./chart-chartist.html">-휴가 및 출장 관리</a></li>
-                            <li><a href="./chart-sparkline.html">-출퇴근 정보</a></li>
-                            <li><a href="./chart-peity.html">-근태 점수</a></li>
+                            <li><a href="./chart-flot.html">-&nbsp;공지사항</a></li>
+                            <li><a href="./chart-morris.html">-&nbsp;사원 등록 및 삭제</a></li>
+                            <li><a href="./chart-chartjs.html">-&nbsp;직급 관리</a></li>
+                            <li><a href="./chart-chartist.html">-&nbsp;휴가 및 출장 관리</a></li>
+                            <li><a href="./chart-sparkline.html">-&nbsp;출퇴근 정보</a></li>
+                            <li><a href="./chart-peity.html">-&nbsp;근태 점수</a></li>
                         </ul>
                     </li>
                     <li>
@@ -256,8 +256,8 @@
                             <i class="fas fa-calendar-alt"></i><span class="nav-text">일정</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./index.html">-일정상세보기</a></li>
-                            <li><a href="./index.html">-일정 등록</a></li>
+                            <li><a href="./index.html">-&nbsp;일정상세보기</a></li>
+                            <li><a href="./index.html">-&nbsp;일정 등록</a></li>
                             
                         </ul>
                     </li>
@@ -266,10 +266,10 @@
                             <i class="fas fa-user"></i> <span class="nav-text">마이 페이지</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./email-inbox.html">-개인정보 설정</a></li>
-                            <li><a href="./email-read.html">-출퇴근 현황</a></li>
-                            <li><a href="./email-compose.html">-근태점수</a></li>
-                            <li><a href="./email-compose.html">-연차</a></li>
+                            <li><a href="./email-inbox.html">-&nbsp;개인정보 설정</a></li>
+                            <li><a href="./email-read.html">-&nbsp;출퇴근 현황</a></li>
+                            <li><a href="./email-compose.html">-&nbsp;근태점수</a></li>
+                            <li><a href="./email-compose.html">-&nbsp;연차</a></li>
                         </ul>
                     </li>
                     
