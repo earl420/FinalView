@@ -94,12 +94,13 @@ var calendar = $('#calendar').fullCalendar({
       }),
       content: $('<div />', {
           class: 'popoverInfoCalendar'
-        })/*.append('<p><strong>등록자:</strong> ' + event.username + '</p>')*/
+        })
         .append('<p><strong>구분:</strong> ' + event.type + '</p>')
         .append('<p><strong>시간:</strong> ' + getDisplayEventDate(event) + '</p>')
-        .append('<div class="popoverDescCalendar"><strong>설명:</strong> ' + event.description + '</div>'),
+        .append('<div class="popoverDescCalendar"><strong>설명:</strong> ' + event.description + '</div>')
+        /*.append('<p><strong>등록자:</strong> ' + event.username + '</p>')*/,
       delay: {
-        show: "800",
+        show: "100",
         hide: "50"
       },
       trigger: 'hover',
@@ -116,7 +117,7 @@ var calendar = $('#calendar').fullCalendar({
   header: {
     left: 'today',
     center: 'prev, title, next',
-    right: ''
+    right: 'month'
   },
   views: {
     month: {

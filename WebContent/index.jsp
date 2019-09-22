@@ -47,7 +47,7 @@
 			<div class="col-sm-6" style="padding-bottom:5px; background: white; border: 1px solid lightgray;">
 			<p style="font-size: 1.5em; padding-right: 20px;">&nbsp;출/퇴근</p>
 				<button class="col-sm-3 btn btn-success" style="height:50px; display: inline-block;">출근</button>
-				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<button class="col-sm-3 btn btn-danger" style="height:50px; display: inline-block;">퇴근</button>
 			</div>
 				
