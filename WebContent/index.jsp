@@ -57,7 +57,7 @@
 			<!-- row -->
 			<div class="content-fluid">
 				<%@ include file="views/common/calendar.jsp" %>
-				<%-- <%@ include file="views/common/calendar2.jsp" %> --%>
+<%-- 				<%@ include file="views/common/calendar2.jsp" %> --%>
 			</div>
 			<!-- /.container -->
 		

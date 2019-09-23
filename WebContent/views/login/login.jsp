@@ -4,8 +4,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>WEworks</title>
 <style>
 body {
 	background-image: url('../../resources/login.jpg');
@@ -50,10 +52,9 @@ font-size:10px;
 </style>
 </head>
 <body>
-	<h1>Test</h1>
 
 	<div class="main">
-		<form>
+		<form id="form1">
 		<table>
 			<tr>
 				<th colspan="2"><img src="../../resources/logo2.png" alt="no"></th>
@@ -63,7 +64,7 @@ font-size:10px;
 					<br>
 					<div class="form-group">
 						<label for="id">ID</label> 
-						<input type="text" class="form-control" id="id" placeholder="사원번호"> 
+						<input type="text" class="form-control" id="id" onkeyup="test1();" placeholder="사원번호"> 
 						<small id="idLost" class="form-text text-muted">
 						아이디 분실시 너는 멍청이. 사원번호인데.
 						</small>
@@ -80,11 +81,11 @@ font-size:10px;
 			</tr>
 			<tr>
 				<td><input type="checkbox" id="remember" name="rememberMe" value="true"/>아이디저장 </td>
-				<td align="right"><a href="location/">까먹음?또요?</a></td>
+				<td align="right"><a style="color:blue;" onclick="alert('연락하세요');">까먹음?또요?</a></td>
 			</tr>
 			<tr>
 				<td colspan="2">
-				<button type="submit" class="btn btn-dark">
+				<button type="button" class="btn btn-dark" onclick="login();">
 				로그인
 				</button>
 				</td>
@@ -93,23 +94,28 @@ font-size:10px;
 		</form>
 	</div>
 <script>
-//아이디저장. 테스트안해봄.
+//아이디저장. 테스트 해봄.
 	$(function(){
-		var key = getCookie("key");
-		$('#id').val(key);
-		
-		if($('#id'.val()!=""){
-			$('#remember').attr("checked",true);	
-		})
-		$('#remember').change(function(){
-			if($('#remember').is(":checked")){
-				setCookie("key",$('#remember').val(),7);
-			}else{
-				deleteCookie("key");
-			}
-		});
-	})
-
+// 		$.cookie('key',$('#id').val(),{expires:7});
+// 		$.removeCookie('key');
+		var key =$.cookie("key");
+// 		key = 'test';
+		if(key==null){
+			console.log('널값!');			
+		}else{
+			$('#id').val(key);
+			$('#remember').attr("checked",true);
+		};
+	});
+	function login(){
+		if($('#remember').prop("checked")){
+			$.cookie('key',$('#id').val(),{expires:7});
+		}else{
+			$.removeCookie("key");
+		}
+		$('#form1').attr('action','');
+		$('#form1').submit();
+	}
 </script>
 </body>
 </html>
