@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%String contextPath = request.getContextPath(); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,6 +89,8 @@ font-size:10px;
 				<button type="button" class="btn btn-dark" onclick="login();">
 				로그인
 				</button>
+				<br>
+				<button onclick="location.href='<%=contextPath%>/broadcasting'">SocketTest</button>
 				</td>
 			</tr>
 		</table>
@@ -115,6 +118,9 @@ font-size:10px;
 		}
 		$('#form1').attr('action','');
 		$('#form1').submit();
+	}
+	function fnSocket(){
+		loacation
 	}
 </script>
 </body>
