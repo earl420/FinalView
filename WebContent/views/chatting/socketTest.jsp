@@ -14,10 +14,13 @@
         <input type="submit" value="send" onclick="send()" />
     </fieldset>
 </body>
+
+
     <script type="text/javascript">
         var textarea = document.getElementById("messageWindow");
-        var webSocket = new WebSocket('ws://localhost:8888/Test/BroadSocket');
+        var webSocket = new WebSocket('ws://localhost:8888/Test/broadcasting');
         var inputMessage = document.getElementById('inputMessage');
+        
     webSocket.onerror = function(event) {
       onError(event)
     };

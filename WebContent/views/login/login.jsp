@@ -89,8 +89,6 @@ font-size:10px;
 				<button type="button" class="btn btn-dark" onclick="login();">
 				로그인
 				</button>
-				<br>
-				<button onclick="location.href='<%=contextPath%>/broadcasting'">SocketTest</button>
 				</td>
 			</tr>
 		</table>
