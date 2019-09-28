@@ -27,9 +27,9 @@ public class MemberDao {
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
 		String sql = prop.getProperty("loginMember");
-		
-		System.out.println("id : "+id+"  pw : "+pw);
-		System.out.println(sql);
+		System.out.println("DAO - "+conn);
+		System.out.println("DAO - id : "+id+"  pw : "+pw);
+		System.out.println("DAO - "+sql);
 		
 		try {
 			pstmt = conn.prepareStatement(sql);

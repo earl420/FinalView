@@ -11,7 +11,7 @@
 <title>WEworks</title>
 <style>
 body {
-	background-image: url('../../resources/login.jpg');
+	background-image: url('<%= contextPath %>/resources/login.jpg');
 	/* background-repeat:no-repeat; */
 	background-position: center;
 	/* background-size:50% 50%; */
@@ -58,14 +58,14 @@ font-size:10px;
 		<form id="form1">
 		<table>
 			<tr>
-				<th colspan="2"><img src="../../resources/logo2.png" alt="no"></th>
+				<th colspan="2"><img src="<%= contextPath %>/resources/logo2.png" alt="no"></th>
 			</tr>
 			<tr>
 				<td colspan="2">
 					<br>
 					<div class="form-group">
 						<label for="id">ID</label> 
-						<input type="text" class="form-control" id="id" onkeyup="test1();" placeholder="사원번호"> 
+						<input type="text" class="form-control" id="id" name="loginId" onkeyup="test1();" placeholder="사원번호"> 
 						<small id="idLost" class="form-text text-muted">
 						아이디 분실시 너는 멍청이. 사원번호인데.
 						</small>
@@ -76,7 +76,7 @@ font-size:10px;
 				<td colspan="2">
 					  <div class="form-group">
 					    <label for="pwd">PW</label>
-					    <input type="password" class="form-control" id="pwd" placeholder="Password">
+					    <input type="password" class="form-control" id="pw" name="loginPw" placeholder="Password">
 					  </div>
 				</td>
 			</tr>
@@ -114,11 +114,9 @@ font-size:10px;
 		}else{
 			$.removeCookie("key");
 		}
-		$('#form1').attr('action','');
+		$('#form1').attr('method','post');
+		$('#form1').attr('action','<%= contextPath%>/login.me');
 		$('#form1').submit();
-	}
-	function fnSocket(){
-		loacation
 	}
 </script>
 </body>
