@@ -1,9 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="member.model.vo.Member" %>
-<%
-	Member loginUser = (Member)session.getAttribute("loginUser");
-%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 
@@ -18,19 +14,11 @@
 	href="./resources/logo1.png">
 <!-- Custom Stylesheet -->
 <link href="views/common/css/style.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 
 </head>
 
 <body>
-<script>
-$(function(){
-	if(<%=loginUser%>==null){
-		<jsp:forward page="/views/login/login.jsp"/>
-	}
-});
-
-</script>
 
 	<!--*******************
         Preloader start
@@ -66,7 +54,7 @@ $(function(){
 				로그인
 				</button>				
 			</div>
-			<input type="hidden" id="h1" value="test">
+				
 			
 			
 		</div>
