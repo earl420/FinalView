@@ -11,7 +11,7 @@
 <title>WEworks</title>
 <style>
 body {
-	background-image: url('../../resources/login.jpg');
+	background-image: url('<%=contextPath%>/resources/login.jpg');
 	/* background-repeat:no-repeat; */
 	background-position: center;
 	/* background-size:50% 50%; */
@@ -58,7 +58,7 @@ font-size:10px;
 		<form id="form1">
 		<table>
 			<tr>
-				<th colspan="2"><img src="../../resources/logo2.png" alt="no"></th>
+				<th colspan="2"><img src="<%=contextPath%>/resources/logo2.png" alt="no"></th>
 			</tr>
 			<tr>
 				<td colspan="2">
@@ -114,11 +114,10 @@ font-size:10px;
 		}else{
 			$.removeCookie("key");
 		}
-		$('#form1').attr('action','');
+		
+		$('#form1').attr('method','post');
+		$('#form1').attr('action','<%=contextPath%>/login.me');
 		$('#form1').submit();
-	}
-	function fnSocket(){
-		loacation
 	}
 </script>
 </body>

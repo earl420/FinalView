@@ -31,17 +31,18 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("로그인서블릿 호출");
 		String id = "ID1";
 		String pw = "PW1";
 		Member loginUser = new MemberService().login(id,pw);
-		
 		if(loginUser == null) {
 			System.out.println("로그인실패");
 		}else {
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", loginUser);
+			System.out.println("로그인성공 : "+loginUser);
 		}
-		response.sendRedirect(request.getContextPath()+"/views/chatting/socketTest.jsp");
+		response.sendRedirect(request.getContextPath());
 	}
 
 	/**
